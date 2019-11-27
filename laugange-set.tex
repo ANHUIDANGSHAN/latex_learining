@@ -1,0 +1,74 @@
+\documentclass[UTF8,12pt]{article}
+
+\usepackage{ctex}
+\usepackage{graph35}
+\newcommand{\myfont}{\textsf{Fancy Text}}%新建一个命令，在正文中提醒
+\title{\heiti 字体设置}
+
+\begin{document}
+	\maketitle
+    (1) 字体簇设置（罗马字体、无衬线字体、打字机字体...
+	
+	\textrm{Roman Family}  \textsf{Sans Serif Family}
+	\texttt{Typewiter Family}
+	
+	% 另一种设置方式
+	{\rmfamily Roman Family}  {\sffamily Sans Serif Family}
+	{\ttfamily Typewriter Family}
+	
+	{\sffamily who are you? you find self on every one around. take you as the same as others!}
+
+	(2) 设置字体系列设置（粗细、宽度）
+	
+	\textmd{Medium Series}   \textbf{Boldface Series}
+	
+	{\mdseries Medium Series}    {\bfseries Boldface Series}
+	
+	(3) 设置字体形状（直立、斜体、伪斜体、小型大写）
+	
+	\textup{Upright Shape} \textit{Italic Shape} \textsl{Slanted Shape}  \textsc{Small Caps Shape}
+	
+	{\upshape Upright shape} {\itshape Italic Shape}
+	{\slshape Slanted Shape} {\scshape Small Caps Shape}
+	
+	(4) 中文字体
+	
+	{\songti 宋体} \quad {\heiti 黑体} \quad {\fangsong 仿宋} \quad {\kaishu 楷书}
+	
+	中文字体中的\textbf{粗体}与\textit{斜体}
+	
+	(5) 字体大小
+	
+	{\tiny         Hello}
+	
+	{\scriptsize   Hello}\\
+	{\footnotesize Hello}\\
+	{\small        Hello}\\
+	{\normalsize   Hello}\\
+	{\large        Hello}\\
+	{\Large        Hello}\\
+	{\LARGE        Hello}\\
+	{\huge         Hello}\\
+	{\Huge         Hello}\\
+	
+	(6) 中文字号设置命令
+	
+	\zihao{5} 你好！%数字越大，字体越小，且命令的作用域为设置命令之后的所有文档
+	
+	\zihao{1} 你好！
+	
+	(7) 定义命令的使用
+	
+	\myfont
+	
+	%插入图片
+	\begin{figure}[b]
+	\centering
+	\includegraphics[width=0.7\linewidth]{screenshot001}
+	\caption{}
+	\label{fig:screenshot001}
+    \end{figure}
+\end{document}
+
+
+
